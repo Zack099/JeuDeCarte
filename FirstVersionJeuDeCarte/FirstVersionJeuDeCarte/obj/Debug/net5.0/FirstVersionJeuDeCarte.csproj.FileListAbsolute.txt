@@ -1,0 +1,7 @@
+C:\Users\hairaza\source\repos\FirstVersionJeuDeCarte\FirstVersionJeuDeCarte\obj\Debug\net5.0\FirstVersionJeuDeCarte.csproj.AssemblyReference.cache
+C:\Users\hairaza\source\repos\FirstVersionJeuDeCarte\FirstVersionJeuDeCarte\obj\Debug\net5.0\FirstVersionJeuDeCarte.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hairaza\source\repos\FirstVersionJeuDeCarte\FirstVersionJeuDeCarte\obj\Debug\net5.0\FirstVersionJeuDeCarte.AssemblyInfoInputs.cache
+C:\Users\hairaza\source\repos\FirstVersionJeuDeCarte\FirstVersionJeuDeCarte\obj\Debug\net5.0\FirstVersionJeuDeCarte.AssemblyInfo.cs
+C:\Users\hairaza\source\repos\FirstVersionJeuDeCarte\FirstVersionJeuDeCarte\obj\Debug\net5.0\FirstVersionJeuDeCarte.csproj.CoreCompileInputs.cache
+C:\Users\hairaza\source\repos\FirstVersionJeuDeCarte\FirstVersionJeuDeCarte\obj\Debug\net5.0\FirstVersionJeuDeCarte.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\hairaza\source\repos\FirstVersionJeuDeCarte\FirstVersionJeuDeCarte\obj\Debug\net5.0\FirstVersionJeuDeCarte.MvcApplicationPartsAssemblyInfo.cache

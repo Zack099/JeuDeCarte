@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "4DCCr405Dk5wgDl+q5sx1Sr3bGXxDKbWjE+6SZjE3xHLPsODA547DYe9lokIwCbW9pEecexVlFIhst9rk3vrGw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hairaza\\source\\repos\\FirstVersionJeuDeCarte\\FirstVersionJeuDeCarte\\FirstVersionJeuDeCarte.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hairaza\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\hairaza\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\hairaza\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\hairaza\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\hairaza\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\hairaza\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
