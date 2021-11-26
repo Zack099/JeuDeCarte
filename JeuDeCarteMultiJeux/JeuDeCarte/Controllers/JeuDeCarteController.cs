@@ -14,12 +14,13 @@ namespace JeuDeCarte.Controllers
     public class JeuDeCarteController : ControllerBase
     {
         private readonly CarteContext _context;
-        private readonly CarteService _CarteService;
+        private readonly CarteService _carteService;
         private readonly JeuDeCarteService _JeuDeCarteService;
         private  UnJeuDeCarteBO _jeuDeCarte;
+
         public JeuDeCarteController(CarteService carteService, JeuDeCarteService JeuDeCarteService)
         {
-            _CarteService = carteService;
+            _carteService = carteService;
             _JeuDeCarteService = JeuDeCarteService;
         }
 
@@ -30,15 +31,13 @@ namespace JeuDeCarte.Controllers
         {
             _jeuDeCarte = _JeuDeCarteService.CreateJeuDeCarte(name, nbCarte);
 
-
-
             return _jeuDeCarte;
         }
 
         [HttpGet("GetCards/{gameId}/{NbCarte}")]
-        public List<ModeleCarteBO> GetSomeCards(int gameId ,int nbCarte)
+        public List<ModeleCarteDTO> GetSomeCards(int gameId ,int nbCarte)
         {
-            return _JeuDeCarteService.GetSomeCards(gameId, nbCarte);
+            return ListBOToDTO(_JeuDeCarteService.GetSomeCards(gameId, nbCarte));
         }
 
         [HttpGet("GetGame/{gameId}")]
@@ -47,6 +46,20 @@ namespace JeuDeCarte.Controllers
             return _JeuDeCarteService.GetJeuDeCarte(gameId);
         }
 
+        [HttpGet("Shuffle/{gameId}")]
+        public void  ShuffleCarte(int gameId)
+        {
+            _JeuDeCarteService.ShuffleCartes(gameId);
+        }
+        public List<ModeleCarteDTO> ListBOToDTO(List<ModeleCarteBO> listOfBO)
+        {
+            var listCards = new List<ModeleCarteDTO>();
+            foreach (ModeleCarteBO bo in listOfBO)
+            {
+                listCards.Add(_carteService.BOCarteToDTO(bo));
+            }
+            return listCards;
+        }
         //    private static JeuDeCarteDTO ItemToDTO(ModeleCarte carte) =>
         //new ModeleCarteDTO
         //{

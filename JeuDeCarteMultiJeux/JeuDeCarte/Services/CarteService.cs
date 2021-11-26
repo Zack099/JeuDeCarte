@@ -32,6 +32,13 @@ namespace JeuDeCarte.Services
                 CardValue = carte.CardValue,
                 Image = carte.Image
             };
+        public ModeleCarteDTO BOCarteToDTO(ModeleCarteBO carte) =>
+            new ModeleCarteDTO
+            {
+                CardCategory = carte.CardCategory,
+                CardValue = carte.CardValue,
+                Image = carte.Image
+            };
 
         //public  List<ModeleCarteDTO> GetAllCartes()
         //{

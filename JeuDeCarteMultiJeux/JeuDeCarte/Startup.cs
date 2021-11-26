@@ -72,7 +72,7 @@ namespace JeuDeCarte
                 {
                     var Carte = new ModeleCarte();
                     Carte.CardValue = $"{value}{Lettre.Substring(0, 1)}";
-                    Carte.CardCategory = "Spades";
+                    Carte.CardCategory = Lettre;
                     Carte.Image = $"https://deckofcardsapi.com/static/img/{Carte.CardValue}.png";
                     context.ModeleCartes.Add(Carte);
                 }

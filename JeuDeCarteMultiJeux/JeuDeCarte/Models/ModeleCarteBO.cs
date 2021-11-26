@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace JeuDeCarte.Models
 {
-    public class ModeleCarteDTO
+    public class ModeleCarteBO
     {
         public int id { get; set; }
         public string CardValue { get; set; }

@@ -12,12 +12,14 @@ namespace JeuDeCarte.Services
     {
         private readonly CarteContext _context;
         private readonly CarteService _carteService;
-
+        
         public JeuDeCarteService(CarteContext context, CarteService carteService)
         {
             _carteService = carteService;
             _context = context;
         }
+
+
 
         private static UnJeuDeCarteBO ItemToBO(UnJeuDeCarte todoItem) =>
             new UnJeuDeCarteBO
@@ -67,7 +69,7 @@ namespace JeuDeCarte.Services
             var JCarte = _context.UnJeuDeCarte.Where(jeu => jeu.id == id)
                        .Include(b => b.Cards).Include(b => b.DefaussedCards)
                        .FirstOrDefault();
-            var JCarteBO = ItemToBO(JCarte);
+            var JCarteBO = ShuffleCartes(ItemToBO(JCarte).id);
             return JCarteBO;
         }
 
@@ -79,7 +81,7 @@ namespace JeuDeCarte.Services
             var JCarte = _context.UnJeuDeCarte.Where(jeu => jeu.id == gameId)
                        .Include(b => b.Cards).Include(b => b.DefaussedCards)
                        .FirstOrDefault();
-            var JCarteBO = ItemToBO(JCarte); 
+            var JCarteBO = ShuffleCartes(ItemToBO(JCarte).id); 
             var cartes = JCarteBO.Cards.GetRange(0,NbCartes);
             
             foreach (ModeleCarteBO carte in cartes)
@@ -102,6 +104,29 @@ namespace JeuDeCarte.Services
             }
             return listCards;
         }
+
+        
+
+
+
+        public UnJeuDeCarteBO ShuffleCartes(int gameId)
+        {
+            var JCarte = _context.UnJeuDeCarte.Where(jeu => jeu.id == gameId)
+                       .Include(b => b.Cards).Include(b => b.DefaussedCards)
+                       .FirstOrDefault();
+            var JCarteBO = ItemToBO(JCarte);
+            JCarteBO.Cards.Shuffle();
+            JCarte = BOToEntity(JCarteBO);
+            //_context.UnJeuDeCarte.Update(JCarte);
+            _context.SaveChanges();
+            return JCarteBO;
+             
+        }
+
+        
+
+        //List<Product> products = getproducts()
+        //    products.Shuffle();
 
         //public List<ModeleCarteDTO> GetAllCartes()
         //{
