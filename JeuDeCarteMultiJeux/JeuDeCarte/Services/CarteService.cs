@@ -28,6 +28,7 @@ namespace JeuDeCarte.Services
         public ModeleCarteBO ModeleCarteToBO(ModeleCarte carte) =>
             new ModeleCarteBO
             {
+                id = carte.id,
                 CardCategory = carte.CardCategory,
                 CardValue = carte.CardValue,
                 Image = carte.Image

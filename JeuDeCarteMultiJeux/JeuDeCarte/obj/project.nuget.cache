@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nCfqcL9Hvc5z3IbsY+WxJuKut431QWRfgX5NRzd2tft/XS/xoq4Q8Qywpfs7pV/0Jpa/cl4vBNxTJGnZRkeZ2Q==",
+  "dgSpecHash": "TYEwwXFkEBqpVEKrQgx6ZN0GhWj+VtorbAg3f/seEZpHJn3XG0Rx1Pha6Tyhaiy3cVupKhhzXNKZCSmAjOWSag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hairaza\\source\\repos\\JeuDeCarte\\JeuDeCarte\\JeuDeCarte.csproj",
+  "projectFilePath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte\\JeuDeCarte.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hairaza\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\hairaza\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

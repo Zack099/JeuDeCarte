@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hairaza\\source\\repos\\JeuDeCarte\\JeuDeCarte\\JeuDeCarte.csproj": {}
+    "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte\\JeuDeCarte.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hairaza\\source\\repos\\JeuDeCarte\\JeuDeCarte\\JeuDeCarte.csproj": {
+    "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte\\JeuDeCarte.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hairaza\\source\\repos\\JeuDeCarte\\JeuDeCarte\\JeuDeCarte.csproj",
+        "projectUniqueName": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte\\JeuDeCarte.csproj",
         "projectName": "JeuDeCarte",
-        "projectPath": "C:\\Users\\hairaza\\source\\repos\\JeuDeCarte\\JeuDeCarte\\JeuDeCarte.csproj",
+        "projectPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte\\JeuDeCarte.csproj",
         "packagesPath": "C:\\Users\\hairaza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hairaza\\source\\repos\\JeuDeCarte\\JeuDeCarte\\obj\\",
+        "outputPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hairaza\\AppData\\Roaming\\NuGet\\NuGet.Config",

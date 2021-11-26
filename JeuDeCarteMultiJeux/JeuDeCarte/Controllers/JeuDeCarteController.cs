@@ -27,11 +27,11 @@ namespace JeuDeCarte.Controllers
 
 
         [HttpGet("{Name}/{NbCarte}")]
-        public UnJeuDeCarteBO StartGame(String name, int nbCarte)
+        public UnJeuDeCarteDTO StartGame(String name, int nbCarte)
         {
             _jeuDeCarte = _JeuDeCarteService.CreateJeuDeCarte(name, nbCarte);
 
-            return _jeuDeCarte;
+            return BOToDTO(_jeuDeCarte);
         }
 
         [HttpGet("GetCards/{gameId}/{NbCarte}")]
@@ -41,9 +41,9 @@ namespace JeuDeCarte.Controllers
         }
 
         [HttpGet("GetGame/{gameId}")]
-        public UnJeuDeCarteBO GetJeuDeCarte(int gameId)
+        public UnJeuDeCarteDTO GetJeuDeCarte(int gameId)
         {
-            return _JeuDeCarteService.GetJeuDeCarte(gameId);
+            return BOToDTO(_JeuDeCarteService.GetJeuDeCarte(gameId));
         }
 
         [HttpGet("Shuffle/{gameId}")]
@@ -60,6 +60,16 @@ namespace JeuDeCarte.Controllers
             }
             return listCards;
         }
+
+        private UnJeuDeCarteDTO BOToDTO(UnJeuDeCarteBO todoItem) =>
+            new UnJeuDeCarteDTO
+            {
+                id = todoItem.id,
+                Name = todoItem.Name,
+                NbCarte = todoItem.NbCarte,
+                Cards = ListBOToDTO(todoItem.Cards),
+                DefaussedCards = ListBOToDTO(todoItem.DefaussedCards)
+            };
         //    private static JeuDeCarteDTO ItemToDTO(ModeleCarte carte) =>
         //new ModeleCarteDTO
         //{

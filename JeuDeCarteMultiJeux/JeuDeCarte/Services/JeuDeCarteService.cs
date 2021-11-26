@@ -30,6 +30,7 @@ namespace JeuDeCarte.Services
                 Cards = todoItem.Cards,
                 DefaussedCards = todoItem.DefaussedCards
             };
+
         private static UnJeuDeCarte BOToEntity(UnJeuDeCarteBO todoItem) =>
             new UnJeuDeCarte
             {
@@ -58,6 +59,7 @@ namespace JeuDeCarte.Services
             JCarte.Name = name;
             JCarte.NbCarte = nbCarte;
             JCarte.Cards = GetAllCartes();
+            JCarte.DefaussedCards = new List<ModeleCarteBO>();
             _context.UnJeuDeCarte.Add(JCarte);
             _context.SaveChanges();
             var JCarteBO = ItemToBO(JCarte);
