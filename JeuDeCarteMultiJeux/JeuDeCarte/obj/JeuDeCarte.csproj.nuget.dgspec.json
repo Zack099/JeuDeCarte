@@ -4,6 +4,275 @@
     "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte\\JeuDeCarte.csproj": {}
   },
   "projects": {
+    "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.BO\\JeuDeCarte.BO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.BO\\JeuDeCarte.BO.csproj",
+        "projectName": "JeuDeCarte.BO",
+        "projectPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.BO\\JeuDeCarte.BO.csproj",
+        "packagesPath": "C:\\Users\\hairaza\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.BO\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hairaza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://mcq-nex50.cgi.credit-cgi.fr:8081/repository/nuget-group/": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DTO\\JeuDeCarte.DTO.csproj": {
+                "projectPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DTO\\JeuDeCarte.DTO.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.BP\\JeuDeCarte.BP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.BP\\JeuDeCarte.BP.csproj",
+        "projectName": "JeuDeCarte.BP",
+        "projectPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.BP\\JeuDeCarte.BP.csproj",
+        "packagesPath": "C:\\Users\\hairaza\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.BP\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hairaza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://mcq-nex50.cgi.credit-cgi.fr:8081/repository/nuget-group/": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.BO\\JeuDeCarte.BO.csproj": {
+                "projectPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.BO\\JeuDeCarte.BO.csproj"
+              },
+              "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DAL\\JeuDeCarte.DAL.csproj": {
+                "projectPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DAL\\JeuDeCarte.DAL.csproj"
+              },
+              "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DTO\\JeuDeCarte.DTO.csproj": {
+                "projectPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DTO\\JeuDeCarte.DTO.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DAL\\JeuDeCarte.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DAL\\JeuDeCarte.DAL.csproj",
+        "projectName": "JeuDeCarte.DAL",
+        "projectPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DAL\\JeuDeCarte.DAL.csproj",
+        "packagesPath": "C:\\Users\\hairaza\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hairaza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://mcq-nex50.cgi.credit-cgi.fr:8081/repository/nuget-group/": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.BO\\JeuDeCarte.BO.csproj": {
+                "projectPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.BO\\JeuDeCarte.BO.csproj"
+              },
+              "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DTO\\JeuDeCarte.DTO.csproj": {
+                "projectPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DTO\\JeuDeCarte.DTO.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DTO\\JeuDeCarte.DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DTO\\JeuDeCarte.DTO.csproj",
+        "projectName": "JeuDeCarte.DTO",
+        "projectPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DTO\\JeuDeCarte.DTO.csproj",
+        "packagesPath": "C:\\Users\\hairaza\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DTO\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hairaza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://mcq-nex50.cgi.credit-cgi.fr:8081/repository/nuget-group/": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte\\JeuDeCarte.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +296,20 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.BO\\JeuDeCarte.BO.csproj": {
+                "projectPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.BO\\JeuDeCarte.BO.csproj"
+              },
+              "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.BP\\JeuDeCarte.BP.csproj": {
+                "projectPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.BP\\JeuDeCarte.BP.csproj"
+              },
+              "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DAL\\JeuDeCarte.DAL.csproj": {
+                "projectPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DAL\\JeuDeCarte.DAL.csproj"
+              },
+              "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DTO\\JeuDeCarte.DTO.csproj": {
+                "projectPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DTO\\JeuDeCarte.DTO.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

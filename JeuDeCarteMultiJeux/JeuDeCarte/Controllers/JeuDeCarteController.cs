@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using JeuDeCarte.Models;
-using JeuDeCarte.Services;
+using JeuDeCarte.DAL;
+using JeuDeCarte.BP;
+using JeuDeCarte.BO;
+using JeuDeCarte.DTO;
 
 namespace JeuDeCarte.Controllers
 {
@@ -14,8 +13,8 @@ namespace JeuDeCarte.Controllers
     public class JeuDeCarteController : ControllerBase
     {
         private readonly CarteContext _context;
-        private readonly CarteService _carteService;
-        private readonly JeuDeCarteService _JeuDeCarteService;
+        private readonly ICarteService _carteService;
+        private readonly IJeuDeCarteService _JeuDeCarteService;
         private  UnJeuDeCarteBO _jeuDeCarte;
 
         public JeuDeCarteController(CarteService carteService, JeuDeCarteService JeuDeCarteService)

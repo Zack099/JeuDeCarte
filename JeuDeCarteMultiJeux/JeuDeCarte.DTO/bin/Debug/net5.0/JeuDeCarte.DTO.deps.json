@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "JeuDeCarte.DTO/1.0.0": {
+        "runtime": {
+          "JeuDeCarte.DTO.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "JeuDeCarte.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

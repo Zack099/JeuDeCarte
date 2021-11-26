@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeuDeCarte", "JeuDeCarte\JeuDeCarte.csproj", "{9920D955-BAC4-458F-B68B-B97ECD2A49F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JeuDeCarte", "JeuDeCarte\JeuDeCarte.csproj", "{9920D955-BAC4-458F-B68B-B97ECD2A49F6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JeuDeCarte.BO", "JeuDeCarte.BO\JeuDeCarte.BO.csproj", "{AE4E131A-8E0A-42CC-82E0-6A86F409D6B4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JeuDeCarte.BP", "JeuDeCarte.BP\JeuDeCarte.BP.csproj", "{FCFDE7CF-9B8F-448F-806B-C28861C073AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JeuDeCarte.DAL", "JeuDeCarte.DAL\JeuDeCarte.DAL.csproj", "{DC35DAF2-1A28-48EC-A763-8D2F084C2C5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeuDeCarte.DTO", "JeuDeCarte.DTO\JeuDeCarte.DTO.csproj", "{C9AD05B8-77C7-4A2A-8F01-7BDBC10168AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{9920D955-BAC4-458F-B68B-B97ECD2A49F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9920D955-BAC4-458F-B68B-B97ECD2A49F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9920D955-BAC4-458F-B68B-B97ECD2A49F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE4E131A-8E0A-42CC-82E0-6A86F409D6B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE4E131A-8E0A-42CC-82E0-6A86F409D6B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE4E131A-8E0A-42CC-82E0-6A86F409D6B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE4E131A-8E0A-42CC-82E0-6A86F409D6B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCFDE7CF-9B8F-448F-806B-C28861C073AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCFDE7CF-9B8F-448F-806B-C28861C073AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCFDE7CF-9B8F-448F-806B-C28861C073AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCFDE7CF-9B8F-448F-806B-C28861C073AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC35DAF2-1A28-48EC-A763-8D2F084C2C5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC35DAF2-1A28-48EC-A763-8D2F084C2C5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC35DAF2-1A28-48EC-A763-8D2F084C2C5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC35DAF2-1A28-48EC-A763-8D2F084C2C5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9AD05B8-77C7-4A2A-8F01-7BDBC10168AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9AD05B8-77C7-4A2A-8F01-7BDBC10168AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9AD05B8-77C7-4A2A-8F01-7BDBC10168AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9AD05B8-77C7-4A2A-8F01-7BDBC10168AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

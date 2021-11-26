@@ -1,0 +1,15 @@
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.BO\bin\Debug\net5.0\JeuDeCarte.BO.deps.json
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.BO\bin\Debug\net5.0\JeuDeCarte.BO.dll
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.BO\bin\Debug\net5.0\ref\JeuDeCarte.BO.dll
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.BO\bin\Debug\net5.0\JeuDeCarte.BO.pdb
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.BO\obj\Debug\net5.0\JeuDeCarte.BO.csproj.AssemblyReference.cache
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.BO\obj\Debug\net5.0\JeuDeCarte.BO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.BO\obj\Debug\net5.0\JeuDeCarte.BO.AssemblyInfoInputs.cache
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.BO\obj\Debug\net5.0\JeuDeCarte.BO.AssemblyInfo.cs
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.BO\obj\Debug\net5.0\JeuDeCarte.BO.csproj.CoreCompileInputs.cache
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.BO\obj\Debug\net5.0\JeuDeCarte.BO.dll
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.BO\obj\Debug\net5.0\ref\JeuDeCarte.BO.dll
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.BO\obj\Debug\net5.0\JeuDeCarte.BO.pdb
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.BO\bin\Debug\net5.0\JeuDeCarte.DTO.dll
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.BO\bin\Debug\net5.0\JeuDeCarte.DTO.pdb
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.BO\obj\Debug\net5.0\JeuDeCarte.BO.csproj.CopyComplete

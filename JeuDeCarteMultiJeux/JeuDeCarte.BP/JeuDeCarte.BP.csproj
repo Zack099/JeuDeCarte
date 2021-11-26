@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JeuDeCarte.BO\JeuDeCarte.BO.csproj" />
+    <ProjectReference Include="..\JeuDeCarte.DAL\JeuDeCarte.DAL.csproj" />
+    <ProjectReference Include="..\JeuDeCarte.DTO\JeuDeCarte.DTO.csproj" />
+  </ItemGroup>
+
+</Project>

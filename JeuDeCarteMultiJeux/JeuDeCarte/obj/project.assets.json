@@ -2096,6 +2096,63 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "JeuDeCarte.BO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "JeuDeCarte.DTO": "1.0.0",
+          "Swashbuckle.AspNetCore": "5.6.3"
+        },
+        "compile": {
+          "bin/placeholder/JeuDeCarte.BO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JeuDeCarte.BO.dll": {}
+        }
+      },
+      "JeuDeCarte.BP/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "JeuDeCarte.BO": "1.0.0",
+          "JeuDeCarte.DAL": "1.0.0",
+          "JeuDeCarte.DTO": "1.0.0",
+          "Swashbuckle.AspNetCore": "5.6.3"
+        },
+        "compile": {
+          "bin/placeholder/JeuDeCarte.BP.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JeuDeCarte.BP.dll": {}
+        }
+      },
+      "JeuDeCarte.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "JeuDeCarte.BO": "1.0.0",
+          "JeuDeCarte.DTO": "1.0.0",
+          "Microsoft.EntityFrameworkCore.InMemory": "5.0.11",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
+          "Swashbuckle.AspNetCore": "5.6.3"
+        },
+        "compile": {
+          "bin/placeholder/JeuDeCarte.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JeuDeCarte.DAL.dll": {}
+        }
+      },
+      "JeuDeCarte.DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/JeuDeCarte.DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JeuDeCarte.DTO.dll": {}
+        }
       }
     }
   },
@@ -7345,10 +7402,34 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "JeuDeCarte.BO/1.0.0": {
+      "type": "project",
+      "path": "../JeuDeCarte.BO/JeuDeCarte.BO.csproj",
+      "msbuildProject": "../JeuDeCarte.BO/JeuDeCarte.BO.csproj"
+    },
+    "JeuDeCarte.BP/1.0.0": {
+      "type": "project",
+      "path": "../JeuDeCarte.BP/JeuDeCarte.BP.csproj",
+      "msbuildProject": "../JeuDeCarte.BP/JeuDeCarte.BP.csproj"
+    },
+    "JeuDeCarte.DAL/1.0.0": {
+      "type": "project",
+      "path": "../JeuDeCarte.DAL/JeuDeCarte.DAL.csproj",
+      "msbuildProject": "../JeuDeCarte.DAL/JeuDeCarte.DAL.csproj"
+    },
+    "JeuDeCarte.DTO/1.0.0": {
+      "type": "project",
+      "path": "../JeuDeCarte.DTO/JeuDeCarte.DTO.csproj",
+      "msbuildProject": "../JeuDeCarte.DTO/JeuDeCarte.DTO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "JeuDeCarte.BO >= 1.0.0",
+      "JeuDeCarte.BP >= 1.0.0",
+      "JeuDeCarte.DAL >= 1.0.0",
+      "JeuDeCarte.DTO >= 1.0.0",
       "Microsoft.EntityFrameworkCore.InMemory >= 5.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.11",
@@ -7382,7 +7463,20 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.BO\\JeuDeCarte.BO.csproj": {
+              "projectPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.BO\\JeuDeCarte.BO.csproj"
+            },
+            "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.BP\\JeuDeCarte.BP.csproj": {
+              "projectPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.BP\\JeuDeCarte.BP.csproj"
+            },
+            "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DAL\\JeuDeCarte.DAL.csproj": {
+              "projectPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DAL\\JeuDeCarte.DAL.csproj"
+            },
+            "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DTO\\JeuDeCarte.DTO.csproj": {
+              "projectPath": "C:\\Users\\hairaza\\source\\repos\\ForGitPerso&ConfProjects\\JeuDeCarte\\JeuDeCarteMultiJeux\\JeuDeCarte.DTO\\JeuDeCarte.DTO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

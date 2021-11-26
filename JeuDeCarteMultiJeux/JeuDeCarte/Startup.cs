@@ -4,9 +4,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
-using JeuDeCarte.Models;
-using JeuDeCarte.Services;
 using System.Collections.Generic;
+using JeuDeCarte.DAL;
+using JeuDeCarte.BP;
 
 namespace JeuDeCarte
 {

@@ -33,6 +33,10 @@
     ".NETCoreApp,Version=v5.0": {
       "JeuDeCarte/1.0.0": {
         "dependencies": {
+          "JeuDeCarte.BO": "1.0.0",
+          "JeuDeCarte.BP": "1.0.0",
+          "JeuDeCarte.DAL": "1.0.0",
+          "JeuDeCarte.DTO": "1.0.0",
           "Microsoft.EntityFrameworkCore.InMemory": "5.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.11",
@@ -1873,6 +1877,55 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XmlDocument": "4.3.0"
+        }
+      },
+      "JeuDeCarte.BO/1.0.0": {
+        "dependencies": {
+          "JeuDeCarte.DTO": "1.0.0",
+          "Swashbuckle.AspNetCore": "5.6.3"
+        },
+        "runtime": {
+          "JeuDeCarte.BO.dll": {}
+        },
+        "compile": {
+          "JeuDeCarte.BO.dll": {}
+        }
+      },
+      "JeuDeCarte.BP/1.0.0": {
+        "dependencies": {
+          "JeuDeCarte.BO": "1.0.0",
+          "JeuDeCarte.DAL": "1.0.0",
+          "JeuDeCarte.DTO": "1.0.0",
+          "Swashbuckle.AspNetCore": "5.6.3"
+        },
+        "runtime": {
+          "JeuDeCarte.BP.dll": {}
+        },
+        "compile": {
+          "JeuDeCarte.BP.dll": {}
+        }
+      },
+      "JeuDeCarte.DAL/1.0.0": {
+        "dependencies": {
+          "JeuDeCarte.BO": "1.0.0",
+          "JeuDeCarte.DTO": "1.0.0",
+          "Microsoft.EntityFrameworkCore.InMemory": "5.0.11",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
+          "Swashbuckle.AspNetCore": "5.6.3"
+        },
+        "runtime": {
+          "JeuDeCarte.DAL.dll": {}
+        },
+        "compile": {
+          "JeuDeCarte.DAL.dll": {}
+        }
+      },
+      "JeuDeCarte.DTO/1.0.0": {
+        "runtime": {
+          "JeuDeCarte.DTO.dll": {}
+        },
+        "compile": {
+          "JeuDeCarte.DTO.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -4485,6 +4538,26 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "JeuDeCarte.BO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JeuDeCarte.BP/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JeuDeCarte.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JeuDeCarte.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
       "type": "referenceassembly",

@@ -1,0 +1,12 @@
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.DTO\bin\Debug\net5.0\JeuDeCarte.DTO.deps.json
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.DTO\bin\Debug\net5.0\JeuDeCarte.DTO.dll
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.DTO\bin\Debug\net5.0\ref\JeuDeCarte.DTO.dll
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.DTO\bin\Debug\net5.0\JeuDeCarte.DTO.pdb
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.DTO\obj\Debug\net5.0\JeuDeCarte.DTO.csproj.AssemblyReference.cache
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.DTO\obj\Debug\net5.0\JeuDeCarte.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.DTO\obj\Debug\net5.0\JeuDeCarte.DTO.AssemblyInfoInputs.cache
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.DTO\obj\Debug\net5.0\JeuDeCarte.DTO.AssemblyInfo.cs
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.DTO\obj\Debug\net5.0\JeuDeCarte.DTO.csproj.CoreCompileInputs.cache
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.DTO\obj\Debug\net5.0\JeuDeCarte.DTO.dll
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.DTO\obj\Debug\net5.0\ref\JeuDeCarte.DTO.dll
+C:\Users\hairaza\source\repos\ForGitPerso&ConfProjects\JeuDeCarte\JeuDeCarteMultiJeux\JeuDeCarte.DTO\obj\Debug\net5.0\JeuDeCarte.DTO.pdb
