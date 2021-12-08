@@ -39,6 +39,13 @@ namespace JeuDeCarte.Controllers
             return ListBOToDTO(_JeuDeCarteService.GetSomeCards(gameId, nbCarte));
         }
 
+        // Seperate the throwcartes with <-> if you want to throw more then one card
+        [HttpGet("ThrowCards/{gameId}/{throwcartes}")]
+        public List<ModeleCarteDTO> ThrowSomeCards(int gameId, String throwcartes)
+        {
+            return ListBOToDTO(_JeuDeCarteService.ThrowSomeCards(gameId, throwcartes));
+        }
+
         [HttpGet("GetGame/{gameId}")]
         public UnJeuDeCarteDTO GetJeuDeCarte(int gameId)
         {
@@ -66,6 +73,7 @@ namespace JeuDeCarte.Controllers
                 id = todoItem.id,
                 Name = todoItem.Name,
                 NbCarte = todoItem.NbCarte,
+                Hand = ListBOToDTO(todoItem.Hand),
                 Cards = ListBOToDTO(todoItem.Cards),
                 DefaussedCards = ListBOToDTO(todoItem.DefaussedCards)
             };

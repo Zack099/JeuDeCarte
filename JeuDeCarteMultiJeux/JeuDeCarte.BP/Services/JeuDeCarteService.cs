@@ -28,6 +28,7 @@ namespace JeuDeCarte.BP
                 id = todoItem.id,
                 Name = todoItem.Name,
                 NbCarte = todoItem.NbCarte,
+                Hand = todoItem.Hand,
                 Cards = todoItem.Cards,
                 DefaussedCards = todoItem.DefaussedCards
             };
@@ -38,6 +39,7 @@ namespace JeuDeCarte.BP
                 id = todoItem.id,
                 Name = todoItem.Name,
                 NbCarte = todoItem.NbCarte,
+                Hand = todoItem.Hand,
                 Cards = todoItem.Cards,
                 DefaussedCards = todoItem.DefaussedCards
             };
@@ -60,6 +62,7 @@ namespace JeuDeCarte.BP
             JCarte.Name = name;
             JCarte.NbCarte = nbCarte;
             JCarte.Cards = GetAllCartes();
+            JCarte.Hand = new List<ModeleCarteBO>();
             JCarte.DefaussedCards = new List<ModeleCarteBO>();
             _context.UnJeuDeCarte.Add(JCarte);
             _context.SaveChanges();
@@ -70,7 +73,7 @@ namespace JeuDeCarte.BP
         public UnJeuDeCarteBO GetJeuDeCarte(int id)
         {
             var JCarte = _context.UnJeuDeCarte.Where(jeu => jeu.id == id)
-                       .Include(b => b.Cards).Include(b => b.DefaussedCards)
+                       .Include(b => b.Cards).Include(b => b.Hand).Include(b => b.DefaussedCards)
                        .FirstOrDefault();
             var JCarteBO = ShuffleCartes(ItemToBO(JCarte).id);
             return JCarteBO;
@@ -82,7 +85,7 @@ namespace JeuDeCarte.BP
         {
             
             var JCarte = _context.UnJeuDeCarte.Where(jeu => jeu.id == gameId)
-                       .Include(b => b.Cards).Include(b => b.DefaussedCards)
+                       .Include(b => b.Cards).Include(b => b.Hand).Include(b => b.DefaussedCards)
                        .FirstOrDefault();
             var JCarteBO = ShuffleCartes(ItemToBO(JCarte).id); 
             var cartes = JCarteBO.Cards.GetRange(0,NbCartes);
@@ -90,7 +93,35 @@ namespace JeuDeCarte.BP
             foreach (ModeleCarteBO carte in cartes)
             {
                 JCarteBO.Cards.Remove(carte);
-                JCarteBO.DefaussedCards.Add(carte);
+                JCarteBO.Hand.Add(carte);
+                //JCarteBO.DefaussedCards.Add(carte);
+            }
+            JCarte = BOToEntity(JCarteBO);
+            _context.SaveChanges();
+            return cartes;
+        }
+
+        public List<ModeleCarteBO> ThrowSomeCards(int gameId, String throwcartes)
+        {
+
+            var JCarte = _context.UnJeuDeCarte.Where(jeu => jeu.id == gameId)
+                       .Include(b => b.Cards).Include(b => b.Hand).Include(b => b.DefaussedCards)
+                       .FirstOrDefault();
+            //?? a voir si ça marche
+            var JCarteBO = ItemToBO(JCarte);
+            
+            var cartes = JCarteBO.Hand;
+            var throwcartesSplited = throwcartes.Split('-');
+
+            foreach (ModeleCarteBO carte in cartes.ToList())
+            {
+                if (throwcartesSplited.Contains(carte.CardValue)){
+                    //JCarteBO.Cards.Remove(carte);
+                    JCarteBO.DefaussedCards.Add(carte);
+                    JCarteBO.Hand.Remove(carte);
+                    
+                }
+                
             }
             JCarte = BOToEntity(JCarteBO);
             _context.SaveChanges();
@@ -115,7 +146,7 @@ namespace JeuDeCarte.BP
         public UnJeuDeCarteBO ShuffleCartes(int gameId)
         {
             var JCarte = _context.UnJeuDeCarte.Where(jeu => jeu.id == gameId)
-                       .Include(b => b.Cards).Include(b => b.DefaussedCards)
+                       .Include(b => b.Cards).Include(b => b.Hand).Include(b => b.DefaussedCards)
                        .FirstOrDefault();
             var JCarteBO = ItemToBO(JCarte);
             JCarteBO.Cards.Shuffle();

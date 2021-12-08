@@ -10,6 +10,7 @@ namespace JeuDeCarte.BP
         UnJeuDeCarteBO CreateJeuDeCarte(String name, int nbCarte);
         UnJeuDeCarteBO GetJeuDeCarte(int id);
         List<ModeleCarteBO> GetSomeCards(int gameId, int NbCartes);
+        List<ModeleCarteBO> ThrowSomeCards(int gameId, String throwcartes);
         List<ModeleCarteBO> GetAllCartes();
         UnJeuDeCarteBO ShuffleCartes(int gameId);
 

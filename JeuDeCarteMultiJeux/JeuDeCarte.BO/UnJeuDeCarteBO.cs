@@ -11,6 +11,7 @@ namespace JeuDeCarte.BO
         public int id { get; set; }
         public String Name { get; set; }
         public int NbCarte { get; set; }
+        public List<ModeleCarteBO> Hand { get; set; }
         public List<ModeleCarteBO> Cards { get; set; }
         public List<ModeleCarteBO> DefaussedCards { get; set; }
     }
