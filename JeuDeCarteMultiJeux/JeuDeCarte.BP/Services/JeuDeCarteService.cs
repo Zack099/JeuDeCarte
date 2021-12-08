@@ -128,6 +128,27 @@ namespace JeuDeCarte.BP
             return cartes;
         }
 
+
+        public List<ModeleCarteBO> FromDefausseToCards(int gameId, int nbCarte)
+        {
+
+            var JCarte = _context.UnJeuDeCarte.Where(jeu => jeu.id == gameId)
+                       .Include(b => b.Cards).Include(b => b.Hand).Include(b => b.DefaussedCards)
+                       .FirstOrDefault();
+            var JCarteBO = ShuffleCartes(ItemToBO(JCarte).id);
+            var cartes = JCarteBO.DefaussedCards.GetRange(0, nbCarte);
+
+            foreach (ModeleCarteBO carte in cartes)
+            {
+                JCarteBO.Cards.Add(carte);
+                JCarteBO.DefaussedCards.Remove(carte);
+                //JCarteBO.DefaussedCards.Add(carte);
+            }
+            JCarte = BOToEntity(JCarteBO);
+            _context.SaveChanges();
+            return cartes;
+        }
+
         public List<ModeleCarteBO> GetAllCartes()
         {
             var listOfEntity = _context.ModeleCartes.ToList();

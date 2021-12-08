@@ -11,6 +11,7 @@ namespace JeuDeCarte.BP
         UnJeuDeCarteBO GetJeuDeCarte(int id);
         List<ModeleCarteBO> GetSomeCards(int gameId, int NbCartes);
         List<ModeleCarteBO> ThrowSomeCards(int gameId, String throwcartes);
+        List<ModeleCarteBO> FromDefausseToCards(int gameId, int nbCarte);
         List<ModeleCarteBO> GetAllCartes();
         UnJeuDeCarteBO ShuffleCartes(int gameId);
 

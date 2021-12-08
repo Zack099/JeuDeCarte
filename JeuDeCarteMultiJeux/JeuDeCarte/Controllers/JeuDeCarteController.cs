@@ -46,6 +46,12 @@ namespace JeuDeCarte.Controllers
             return ListBOToDTO(_JeuDeCarteService.ThrowSomeCards(gameId, throwcartes));
         }
 
+        [HttpGet("FromDefausseToCards/{gameId}/{nbCarte}")]
+        public List<ModeleCarteDTO> FromDefausseToCards(int gameId, int nbCarte)
+        {
+            return ListBOToDTO(_JeuDeCarteService.FromDefausseToCards(gameId, nbCarte));
+        }
+
         [HttpGet("GetGame/{gameId}")]
         public UnJeuDeCarteDTO GetJeuDeCarte(int gameId)
         {
