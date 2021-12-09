@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using JeuDeCarte.DAL;
 using JeuDeCarte.BP;
+using Microsoft.OpenApi.Models;
 
 namespace JeuDeCarte
 {
@@ -29,10 +30,10 @@ namespace JeuDeCarte
             services.AddScoped<CarteContext>();
             services.AddScoped<CarteService>();
             services.AddScoped<JeuDeCarteService>();
-            //services.AddSwaggerGen(c =>
-            //{
-            //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "JeuDeCarte", Version = "v1" });
-            //});
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "JeuDeCarte", Version = "v1" });
+            });
         }
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -40,8 +41,15 @@ namespace JeuDeCarte
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                //app.UseSwagger();
-                //app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "JeuDeCarte v1"));
+
+                app.UseSwagger();
+
+                app.UseSwaggerUI(c =>
+                {
+                    c.RoutePrefix = string.Empty;
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Jeu De Carte");
+              
+                });
             }
 
             
